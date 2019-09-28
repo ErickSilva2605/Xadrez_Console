@@ -12,7 +12,7 @@
         }
         public override string ToString()
         {
-            return $"Linha {Linha}, Coluna {Coluna}";
+            return $"{Linha},{Coluna}";
         }
     }
 }
