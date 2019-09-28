@@ -1,4 +1,4 @@
-﻿namespace Tabuleiro
+﻿namespace tabuleiro
 {
     class Posicao
     {
@@ -12,7 +12,7 @@
         }
         public override string ToString()
         {
-            return $"linha {Linha}, coluna {Coluna}";
+            return $"Linha {Linha}, Coluna {Coluna}";
         }
     }
 }
