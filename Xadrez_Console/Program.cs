@@ -12,16 +12,18 @@ namespace Xadrez_Console
         {
             try
             {
-                //Tabuleiro tab = new Tabuleiro(8, 8);
+                Tabuleiro tab = new Tabuleiro(8, 8);
 
-                //tab.SetPeca(new Torre(tab, Cor.Preta), new Posicao(0, 0));
-                //tab.SetPeca(new Torre(tab, Cor.Preta), new Posicao(1, 3));
-                //tab.SetPeca(new Rei(tab, Cor.Preta), new Posicao(0, 2));
+                tab.SetPeca(new Torre(tab, Cor.Preta), new Posicao(0, 0));
+                tab.SetPeca(new Torre(tab, Cor.Preta), new Posicao(1, 3));
+                tab.SetPeca(new Rei(tab, Cor.Preta), new Posicao(0, 2));
 
-                //Tela.ImprimirTabuleiro(tab);
+                tab.SetPeca(new Rei(tab, Cor.Branca), new Posicao(7, 2));
 
-                PosicaoXadrez pos = new PosicaoXadrez('c', 7);
-                Console.WriteLine(pos.ToPosicao());
+                Tela.ImprimirTabuleiro(tab);
+
+                //PosicaoXadrez pos = new PosicaoXadrez('c', 7);
+                //Console.WriteLine(pos.ToPosicao());
 
             }
             catch (TabulerioException ex)
